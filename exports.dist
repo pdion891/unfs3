@@ -1,2 +1,4 @@
 # Modify to your needs, add other NFS options as needed (http://manpages.ubuntu.com/manpages/natty/man8/unfsd.8.html)
-#/path/to/share    (ro)
+# cloudstack NFS share for test environments
+/exports/secondary (rw,async,no_root_squash,no_subtree_check)
+/exports/primary (rw,async,no_root_squash,no_subtree_check)
